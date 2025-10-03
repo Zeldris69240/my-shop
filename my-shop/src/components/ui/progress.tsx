@@ -5,6 +5,15 @@ import * as ProgressPrimitive from "@radix-ui/react-progress"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Visual progress bar that fills horizontally based on a percentage value.
+ *
+ * If `value` is undefined, the indicator is positioned as 0% progress.
+ *
+ * @param className - Additional CSS classes to apply to the root progress container
+ * @param value - Progress percentage from 0 to 100; values outside this range will affect the indicator transform accordingly. If omitted, treated as 0
+ * @returns The rendered Progress React element
+ */
 function Progress({
   className,
   value,
